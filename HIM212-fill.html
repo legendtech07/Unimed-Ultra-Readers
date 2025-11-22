@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill-in-the-Gap Quiz - HIM212</title>
+    <link rel="stylesheet" href="HIM212.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h1>HIM212 - Fill-in-the-Gap Quiz</h1>
+            <p>Test your recall by filling in missing words</p>
+        </header>
+
+        <div class="quiz-stats">
+            <div class="question-counter">Question: <span id="current-question">1</span>/<span id="total-questions">10</span></div>
+            <div class="score-counter">Score: <span id="score">0</span>/10</div>
+        </div>
+
+        <div id="quiz-content">
+            <!-- Fill-in-the-gap questions will be inserted here by JavaScript -->
+        </div>
+
+        <div class="quiz-controls">
+            <button id="prev-btn" class="control-btn" disabled>Previous</button>
+            <button id="next-btn" class="control-btn">Next</button>
+            <button id="submit-btn" class="control-btn" style="display: none;">Submit Quiz</button>
+        </div>
+
+        <a href="HIM212.html" class="home-link">← Back to Home</a>
+    </div>
+
+    <script src="HIM212-fill.js"></script>
+</body>
+</html>

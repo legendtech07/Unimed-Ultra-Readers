@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Theory CBT Quiz</title>
+    <link rel="stylesheet" href="set-theory.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Set Theory CBT Quiz</h1>
+            <p>Test your knowledge with 10 random questions in 15 minutes</p>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="set-theory.html">Home</a></li>
+                <li><a href="set-theory-cbt.html" class="active">Take Quiz</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+
+        <div id="quiz-instructions" class="instructions">
+            <h2>Quiz Instructions</h2>
+            <ul>
+                <li>This quiz contains 10 randomly selected questions from our question bank</li>
+                <li>You have 15 minutes to complete the quiz</li>
+                <li>Each question has 4 options - select the correct one</li>
+                <li>You can navigate between questions using Next/Previous buttons</li>
+                <li>After submission, you can review your answers with explanations</li>
+                <li>Click "Start Quiz" when you're ready to begin</li>
+            </ul>
+            <button id="start-quiz" class="cta-button">Start Quiz</button>
+        </div>
+
+        <div id="quiz-container" class="hidden">
+            <div class="quiz-header">
+                <div class="timer">
+                    Time Remaining: <span id="time">15:00</span>
+                </div>
+                <div class="progress">
+                    Question: <span id="current-question">1</span>/10
+                </div>
+            </div>
+
+            <div id="question-container">
+                <!-- Questions will be dynamically inserted here -->
+            </div>
+
+            <div class="quiz-controls">
+                <button id="prev-btn" class="nav-btn">Previous</button>
+                <button id="next-btn" class="nav-btn">Next</button>
+                <button id="submit-btn" class="submit-btn">Submit Quiz</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="hidden">
+            <h2>Quiz Results</h2>
+            <div id="score-display"></div>
+            <div id="answers-review">
+                <!-- Answers review will be dynamically inserted here -->
+            </div>
+            <div class="results-controls">
+                <button id="retake-btn" class="cta-button">Retake Quiz</button>
+                <a href="set-theory.html" class="cta-button secondary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="set-theory.js"></script>
+</body>
+</html>

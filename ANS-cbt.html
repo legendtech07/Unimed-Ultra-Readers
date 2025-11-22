@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANS CBT Quiz</title>
+    <link rel="stylesheet" href="ANS.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Autonomic Nervous System - CBT Quiz</h1>
+            <p>Test your knowledge with multiple choice questions</p>
+        </header>
+
+        <main class="quiz-container">
+            <div class="quiz-header">
+                <h2 class="quiz-title">CBT Format</h2>
+                <div class="quiz-stats">
+                    <div class="question-counter">Question: <span id="current-question">1</span>/<span id="total-questions">10</span></div>
+                    <div class="score-display">Score: <span id="score">0</span>/10</div>
+                </div>
+            </div>
+
+            <div id="quiz-content">
+                <!-- Questions will be loaded here by JavaScript -->
+            </div>
+
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="btn-secondary">Previous</button>
+                <button id="next-btn" class="btn-primary">Next</button>
+                <button id="submit-btn" class="btn-primary" style="display: none;">Submit Quiz</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Autonomic Nervous System Quiz | Educational Resource</p>
+        </footer>
+    </div>
+
+    <script src="ANS-cbt.js"></script>
+</body>
+</html>

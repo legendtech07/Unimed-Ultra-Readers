@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill-in-the-Gap - Osteology Quiz</title>
+    <link rel="stylesheet" href="foot-osteology.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fill in the Gap</h1>
+            <div class="quiz-info">
+                <span id="question-counter">Question: 0/10</span>
+                <span id="timer">Time: 00:00</span>
+            </div>
+        </header>
+        
+        <main>
+            <div id="start-screen" class="screen active">
+                <h2>Fill-in-the-Gap Instructions</h2>
+                <ul>
+                    <li>10 random questions from a pool of 30</li>
+                    <li>Type your answer in the input field</li>
+                    <li>Answers are case-insensitive</li>
+                    <li>Review answers at the end</li>
+                </ul>
+                <button id="start-fill" class="btn-primary">Start Test</button>
+            </div>
+            
+            <div id="quiz-screen" class="screen">
+                <div class="question-container">
+                    <h3 id="question-text"></h3>
+                    <div id="input-container">
+                        <input type="text" id="answer-input" placeholder="Type your answer here...">
+                        <button id="check-answer" class="btn-primary">Check Answer</button>
+                    </div>
+                    <div id="feedback" class="feedback"></div>
+                </div>
+                <div class="navigation">
+                    <button id="prev-btn" class="btn-secondary">Previous</button>
+                    <button id="next-btn" class="btn-primary">Next</button>
+                    <button id="submit-btn" class="btn-accent">Submit Test</button>
+                </div>
+            </div>
+            
+            <div id="results-screen" class="screen">
+                <h2>Test Results</h2>
+                <div id="score-display"></div>
+                <div id="answers-review"></div>
+                <div class="actions">
+                    <button id="restart-btn" class="btn-primary">Take Another Test</button>
+                    <button id="home-btn" class="btn-secondary">Back to Home</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="foot-osteology-fill-gap-questions.js"></script>
+    <script src="foot-osteology-fill-gap.js"></script>
+</body>
+</html>
