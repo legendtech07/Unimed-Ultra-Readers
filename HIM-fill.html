@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill in the Gap Quiz - HIM 211</title>
+    <link rel="stylesheet" href="HIM.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HIM 211: Fill in the Gap Quiz</h1>
+            <p>Introduction to Health Information Science</p>
+        </header>
+        
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h2 class="quiz-title">Fill in the Blank Questions</h2>
+                <div class="quiz-progress">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
+            </div>
+            
+            <div id="quiz-content">
+                <div class="question-container">
+                    <div class="question-text" id="question-text"></div>
+                    <div class="fill-input-container" id="fill-input-container"></div>
+                </div>
+                
+                <div class="quiz-controls">
+                    <button id="prev-btn" class="btn btn-secondary">Previous</button>
+                    <button id="next-btn" class="btn">Next</button>
+                    <button id="submit-btn" class="btn btn-success hidden">Submit Quiz</button>
+                </div>
+            </div>
+            
+            <div id="results-container" class="results-container hidden">
+                <h2>Quiz Results</h2>
+                <div class="score">Your Score: <span id="score-value">0</span>/10</div>
+                <button id="review-btn" class="btn">Review Answers</button>
+                <button id="restart-btn" class="btn btn-secondary">Take Another Quiz</button>
+                <a href="HIM.html" class="btn">Back to Home</a>
+                
+                <div id="answer-review" class="answer-review hidden"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="HIM-fill.js"></script>
+</body>
+</html>
