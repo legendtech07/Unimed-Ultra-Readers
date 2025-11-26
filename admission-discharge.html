@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Admission & Discharge Quiz</title>
+    <link rel="stylesheet" href="admission-discharge.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hospital Admission & Discharge Procedures</h1>
+            <p class="subtitle">Test your knowledge with these 50 fill-in-the-blank questions</p>
+        </header>
+
+        <div class="quiz-selection">
+            <h2>Select a Quiz</h2>
+            <div class="quiz-cards">
+                <div class="quiz-card" data-quiz="1">
+                    <h3>Quiz 1</h3>
+                    <p>Basic Admission Concepts</p>
+                    <span>10 Questions</span>
+                </div>
+                <div class="quiz-card" data-quiz="2">
+                    <h3>Quiz 2</h3>
+                    <p>Admission Procedures & Equipment</p>
+                    <span>10 Questions</span>
+                </div>
+                <div class="quiz-card" data-quiz="3">
+                    <h3>Quiz 3</h3>
+                    <p>Emergency & Adult Admissions</p>
+                    <span>10 Questions</span>
+                </div>
+                <div class="quiz-card" data-quiz="4">
+                    <h3>Quiz 4</h3>
+                    <p>Pediatric Admissions</p>
+                    <span>10 Questions</span>
+                </div>
+                <div class="quiz-card" data-quiz="5">
+                    <h3>Quiz 5</h3>
+                    <p>Discharge Procedures</p>
+                    <span>10 Questions</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-container" class="quiz-container hidden">
+            <div class="quiz-header">
+                <h2 id="quiz-title">Quiz Title</h2>
+                <div class="quiz-progress">
+                    <span id="progress">Question 1 of 10</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="question-container">
+                <!-- Questions will be loaded here by JavaScript -->
+            </div>
+
+            <div class="quiz-controls">
+                <button id="prev-btn" class="btn btn-secondary">Previous</button>
+                <button id="next-btn" class="btn btn-primary">Next</button>
+                <button id="submit-btn" class="btn btn-success hidden">Submit Quiz</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="results-container hidden">
+            <h2>Quiz Results</h2>
+            <div id="score-display" class="score-display"></div>
+            <div id="answers-review" class="answers-review"></div>
+            <button id="retry-btn" class="btn btn-primary">Take Another Quiz</button>
+        </div>
+    </div>
+
+    <script src="admission-discharge-questions.js"></script>
+    <script src="admission-discharge.js"></script>
+</body>
+</html>

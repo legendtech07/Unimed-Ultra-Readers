@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHY 111: Physics Measurement Quiz</title>
+    <link rel="stylesheet" href="phy-measurement.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PHY 111: General Physics</h1>
+            <h2>Physics and Measurement Quiz</h2>
+        </header>
+
+        <main>
+            <section id="home" class="section active">
+                <div class="intro">
+                    <h3>Welcome to the Physics Measurement Quiz</h3>
+                    <p>Test your knowledge of physics fundamentals, measurement systems, units, and dimensional analysis.</p>
+                    <p>Select a test below to begin:</p>
+                </div>
+
+                <div class="test-selection">
+                    <div class="test-card" data-test="1">
+                        <h3>Test 1: Physics Fundamentals & SI Units</h3>
+                        <p>10 questions on basic physics concepts and SI units</p>
+                        <button class="start-btn">Start Test</button>
+                    </div>
+                    <div class="test-card" data-test="2">
+                        <h3>Test 2: Length, Mass & Time</h3>
+                        <p>10 questions on measurement of fundamental quantities</p>
+                        <button class="start-btn">Start Test</button>
+                    </div>
+                    <div class="test-card" data-test="3">
+                        <h3>Test 3: Density & Atomic Mass</h3>
+                        <p>10 questions on density calculations and atomic concepts</p>
+                        <button class="start-btn">Start Test</button>
+                    </div>
+                    <div class="test-card" data-test="4">
+                        <h3>Test 4: Dimensional Analysis</h3>
+                        <p>10 questions on dimensional consistency and analysis</p>
+                        <button class="start-btn">Start Test</button>
+                    </div>
+                    <div class="test-card" data-test="5">
+                        <h3>Test 5: Unit Conversion & Estimation</h3>
+                        <p>10 questions on unit conversions and order of magnitude</p>
+                        <button class="start-btn">Start Test</button>
+                    </div>
+                </div>
+
+                <div class="progress-summary">
+                    <h3>Your Progress</h3>
+                    <div class="progress-cards">
+                        <!-- Progress will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="quiz" class="section">
+                <div class="quiz-header">
+                    <h3 id="test-title">Test 1: Physics Fundamentals & SI Units</h3>
+                    <div class="quiz-info">
+                        <span id="question-counter">Question 1 of 10</span>
+                        <span id="timer">Time: 15:00</span>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <div class="question">
+                        <h4 id="question-text">Question text will appear here</h4>
+                    </div>
+                    <div class="options">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="quiz-navigation">
+                    <button id="prev-btn" class="nav-btn">Previous</button>
+                    <button id="next-btn" class="nav-btn">Next</button>
+                    <button id="submit-btn" class="nav-btn submit">Submit Test</button>
+                </div>
+            </section>
+
+            <section id="results" class="section">
+                <div class="results-container">
+                    <h3>Test Results</h3>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span id="score-percent">85%</span>
+                        </div>
+                        <p>You scored <span id="score-text">8.5</span> out of 10</p>
+                    </div>
+                    
+                    <div class="results-details">
+                        <h4>Performance Summary</h4>
+                        <div class="detail-item">
+                            <span>Correct Answers:</span>
+                            <span id="correct-answers">8</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Incorrect Answers:</span>
+                            <span id="incorrect-answers">2</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Time Taken:</span>
+                            <span id="time-taken">12:45</span>
+                        </div>
+                    </div>
+
+                    <div class="review-section">
+                        <h4>Review Questions</h4>
+                        <div class="questions-review">
+                            <!-- Questions review will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <button id="retry-btn" class="action-btn">Retry This Test</button>
+                        <button id="new-test-btn" class="action-btn">Take Another Test</button>
+                        <button id="home-btn" class="action-btn">Back to Home</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>PHY 111 General Physics - Measurement Quiz &copy; 2023</p>
+        </footer>
+    </div>
+
+    <script src="phy-measurement-questions.js"></script>
+    <script src="phy-measurement.js"></script>
+</body>
+</html>
