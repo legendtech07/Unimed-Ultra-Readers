@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill in the Gap - Cell Theory</title>
+    <link rel="stylesheet" href="cell-theory.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cell Theory Fill in the Gap Quiz</h1>
+            <p>Test your recall with fill-in-the-blank questions</p>
+        </header>
+        
+        <main>
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h2 class="quiz-title">Cell Theory and Cell Division</h2>
+                    <div class="quiz-info">
+                        <span id="question-counter">Question 1 of 10</span>
+                        <span id="score-display">Score: 0/10</span>
+                    </div>
+                </div>
+                
+                <div id="quiz-content">
+                    <!-- Questions will be loaded here by JavaScript -->
+                </div>
+                
+                <div class="nav-buttons">
+                    <button id="prev-btn" class="nav-btn" disabled>Previous</button>
+                    <button id="next-btn" class="nav-btn">Next</button>
+                    <button id="submit-btn" class="nav-btn" style="display: none;">Submit Quiz</button>
+                </div>
+            </div>
+            
+            <div id="results-container" class="results-container" style="display: none;">
+                <h2>Quiz Results</h2>
+                <div class="score">You scored <span id="final-score">0</span> out of 10</div>
+                <div class="score-percentage" id="score-percentage">0%</div>
+                
+                <div id="results-breakdown" class="results-breakdown">
+                    <!-- Results breakdown will be loaded here -->
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="retake-btn" class="nav-btn">Retake Quiz</button>
+                    <a href="cell-theory.html" class="btn">Back to Home</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Based on ANA 217: Cell Theory and Cell Division</p>
+        </footer>
+    </div>
+    
+    <script src="cell-theory-fill.js"></script>
+</body>
+</html>

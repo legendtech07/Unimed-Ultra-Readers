@@ -1,0 +1,309 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Home Page Styles */
+.intro {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.intro h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.intro ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+.macromolecules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.molecule-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.molecule-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+.molecule-card ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+.molecule-card li {
+    margin-bottom: 0.3rem;
+}
+
+.polymerization {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.polymerization h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Quiz Styles */
+#quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+#start-screen {
+    text-align: center;
+}
+
+#start-screen h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#start-screen p {
+    margin-bottom: 1rem;
+}
+
+#start-btn, #retry-btn, #home-btn, #prev-btn, #next-btn, #submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: 0.5rem;
+}
+
+#start-btn:hover, #retry-btn:hover, #home-btn:hover, #prev-btn:hover, #next-btn:hover, #submit-btn:hover {
+    background-color: #2980b9;
+}
+
+#quiz-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+#progress, #timer {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#question-container {
+    margin-bottom: 1.5rem;
+}
+
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option:hover {
+    background-color: #e9ecef;
+}
+
+.option.selected {
+    background-color: #d1ecf1;
+    border-color: #3498db;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+#results-screen h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#score-display {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+#score-display p {
+    margin-bottom: 0.5rem;
+}
+
+#review-section {
+    margin-bottom: 2rem;
+}
+
+.review-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.review-item.correct {
+    border-left: 4px solid #28a745;
+}
+
+.review-item.incorrect {
+    border-left: 4px solid #dc3545;
+}
+
+.review-question {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.review-answer {
+    margin-bottom: 0.5rem;
+}
+
+.review-explanation {
+    font-style: italic;
+    color: #6c757d;
+}
+
+#results-actions {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .macromolecules {
+        grid-template-columns: 1fr;
+    }
+    
+    #quiz-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    #navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    #navigation button {
+        width: 100%;
+    }
+}
