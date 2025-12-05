@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill-in-the-Gap Quiz - Hip Bone Osteology</title>
+    <link rel="stylesheet" href="hip232.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-edit"></i> FILL-IN-THE-GAP QUIZ: HIP BONE OSTEOLOGY</h1>
+            <p class="subtitle">Complete the sentences with the correct anatomical terms</p>
+        </header>
+
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <div class="quiz-title">
+                    <h2><i class="fas fa-pencil-alt"></i> Anatomy Terminology Test</h2>
+                </div>
+                <div class="question-counter">
+                    Question: <span id="fill-current-question">1</span>/<span id="fill-total-questions">10</span>
+                </div>
+                <div class="score-display">
+                    Score: <span id="fill-score">0</span>/10
+                </div>
+            </div>
+
+            <div id="fill-question-container">
+                <!-- Fill-in questions will be loaded here -->
+                <div class="question-card">
+                    <div class="question-number">
+                        <i class="fas fa-question-circle"></i> Question 1
+                    </div>
+                    <div class="fill-gap-text" id="fill-question-text">
+                        Loading questions...
+                    </div>
+                    <div id="fill-input-container" style="margin: 20px 0;">
+                        <!-- Input field will be loaded here -->
+                    </div>
+                    <div id="fill-feedback" style="display: none; margin-top: 20px; padding: 15px; border-radius: 8px;"></div>
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button class="nav-btn prev-btn" id="fill-prev-btn" onclick="fillPrevQuestion()">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <div>
+                    <button class="nav-btn home-btn" onclick="location.href='hip232.html'">
+                        <i class="fas fa-home"></i> Home
+                    </button>
+                    <button class="nav-btn submit-btn" id="fill-submit-btn" onclick="fillSubmitQuiz()" style="display: none;">
+                        <i class="fas fa-paper-plane"></i> Submit Quiz
+                    </button>
+                </div>
+                <button class="nav-btn next-btn" id="fill-next-btn" onclick="fillNextQuestion()">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Anatomy Fill-in Quiz &copy; 2023 | Questions based on lecture by Dr. Gideon Oluwatunase</p>
+        </footer>
+    </div>
+
+    <script src="hip232-fill.js"></script>
+</body>
+</html>

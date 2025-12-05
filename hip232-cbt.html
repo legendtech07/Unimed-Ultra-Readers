@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Quiz - Hip Bone Osteology</title>
+    <link rel="stylesheet" href="hip232.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-list-ol"></i> CBT QUIZ: HIP BONE OSTEOLOGY</h1>
+            <p class="subtitle">Multiple Choice Questions - Select the correct answer</p>
+        </header>
+
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <div class="quiz-title">
+                    <h2><i class="fas fa-brain"></i> Anatomy Knowledge Test</h2>
+                </div>
+                <div class="question-counter">
+                    Question: <span id="current-question">1</span>/<span id="total-questions">10</span>
+                </div>
+                <div class="score-display">
+                    Score: <span id="score">0</span>/10
+                </div>
+            </div>
+
+            <div id="question-container">
+                <!-- Questions will be loaded here by JavaScript -->
+                <div class="question-card">
+                    <div class="question-number">
+                        <i class="fas fa-question-circle"></i> Question 1
+                    </div>
+                    <div class="question-text" id="question-text">
+                        Loading questions...
+                    </div>
+                    <div class="options-container" id="options-container">
+                        <!-- Options will be loaded here -->
+                    </div>
+                    <div id="feedback" style="display: none; margin-top: 20px; padding: 15px; border-radius: 8px;"></div>
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button class="nav-btn prev-btn" id="prev-btn" onclick="prevQuestion()">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <div>
+                    <button class="nav-btn home-btn" onclick="location.href='hip232.html'">
+                        <i class="fas fa-home"></i> Home
+                    </button>
+                    <button class="nav-btn submit-btn" id="submit-btn" onclick="submitQuiz()" style="display: none;">
+                        <i class="fas fa-paper-plane"></i> Submit Quiz
+                    </button>
+                </div>
+                <button class="nav-btn next-btn" id="next-btn" onclick="nextQuestion()">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Anatomy CBT Quiz &copy; 2023 | Questions based on lecture by Dr. Gideon Oluwatunase</p>
+        </footer>
+    </div>
+
+    <script src="hip232-cbt.js"></script>
+</body>
+</html>

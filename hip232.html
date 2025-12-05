@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hip Bone Osteology Quiz</title>
+    <link rel="stylesheet" href="hip232.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bone"></i> OSTEOLOGY OF THE HIP BONE</h1>
+            <p class="subtitle">MBBS/BDS Gross Anatomy Lecture - Dr. Gideon Oluwatunase</p>
+        </header>
+
+        <div class="intro-section">
+            <div class="lecture-info">
+                <h2><i class="fas fa-book-medical"></i> Lecture Overview</h2>
+                <p>The hip bone (os coxae) is an irregularly shaped, bilateral bone of the bony pelvis. It consists of three fused bones: the ilium, ischium, and pubis. This quiz will test your knowledge of hip bone osteology including its structures, landmarks, and clinical applications.</p>
+                
+                <div class="key-points">
+                    <h3><i class="fas fa-key"></i> Key Topics Covered:</h3>
+                    <ul>
+                        <li>Three components of hip bone</li>
+                        <li>Acetabulum anatomy</li>
+                        <li>Ilium, ischium, and pubis structures</li>
+                        <li>Obturator foramen</li>
+                        <li>Applied anatomy (bone marrow biopsy)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quiz-options">
+                <h2><i class="fas fa-graduation-cap"></i> Choose Your Quiz Format</h2>
+                
+                <div class="quiz-card" onclick="location.href='hip232-cbt.html'">
+                    <div class="quiz-icon">
+                        <i class="fas fa-list-ol"></i>
+                    </div>
+                    <h3>CBT Format</h3>
+                    <p>Multiple choice questions with 4 options each</p>
+                    <div class="quiz-stats">
+                        <span><i class="fas fa-question-circle"></i> 50 Questions Pool</span>
+                        <span><i class="fas fa-random"></i> 10 Random Questions per Test</span>
+                    </div>
+                    <button class="start-btn">Start CBT Quiz</button>
+                </div>
+
+                <div class="quiz-card" onclick="location.href='hip232-fill.html'">
+                    <div class="quiz-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Fill in the Gap</h3>
+                    <p>Type your answers to complete the sentences</p>
+                    <div class="quiz-stats">
+                        <span><i class="fas fa-question-circle"></i> 30 Questions Pool</span>
+                        <span><i class="fas fa-random"></i> 10 Random Questions per Test</span>
+                    </div>
+                    <button class="start-btn">Start Fill-in Quiz</button>
+                </div>
+
+                <div class="features">
+                    <h3><i class="fas fa-star"></i> Quiz Features:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Random question selection</li>
+                        <li><i class="fas fa-check-circle"></i> Immediate answer review</li>
+                        <li><i class="fas fa-check-circle"></i> Detailed explanations</li>
+                        <li><i class="fas fa-check-circle"></i> Score tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Retake unlimited times</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Anatomy Quiz System &copy; 2023 | Based on lecture by Dr. Gideon Oluwatunase</p>
+            <p class="disclaimer">For educational purposes only. Always consult official textbooks and instructors.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add hover effects to quiz cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.quiz-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
