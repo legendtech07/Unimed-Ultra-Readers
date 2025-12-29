@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 3: Disaccharides & Reducing Sugars</title>
+    <link rel="stylesheet" href="CARstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="quiz-header">
+            <h1 class="quiz-title"><i class="fas fa-candy-cane"></i> Test 3: Disaccharides & Reducing Sugars</h1>
+            <div class="quiz-progress" id="questionNumber">Question 1 of 10</div>
+        </header>
+
+        <div class="quiz-container">
+            <div class="question-card">
+                <div class="question-number">Fill in the Blank</div>
+                <div class="question-text" id="question">
+                    A sugar composed of two monosaccharide units is called a __________.
+                </div>
+                <form id="quizForm">
+                    <input type="text" 
+                           class="answer-input" 
+                           id="answerInput" 
+                           placeholder="Type your answer here..." 
+                           autocomplete="off">
+                    
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id="checkBtn">
+                            <i class="fas fa-check-circle"></i> Check Answer
+                        </button>
+                        <button type="button" class="btn btn-secondary" id="nextBtn" style="display: none;">
+                            <i class="fas fa-arrow-right"></i> Next Question
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="explanation-box" id="explanation">
+                    <div class="explanation-title">
+                        <i class="fas fa-lightbulb"></i> Explanation
+                    </div>
+                    <div id="explanationText">
+                        <!-- Explanation will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="CAR3.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i> Previous Test
+                </a>
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="CAR5.html" class="nav-link">
+                    Next Test <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="CARdata.js"></script>
+    <script src="CARquiz.js"></script>
+</body>
+</html>
