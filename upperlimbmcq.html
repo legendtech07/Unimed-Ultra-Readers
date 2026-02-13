@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper Limb Anatomy MCQs</title>
+    <link rel="stylesheet" href="upperlimbmcq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bone"></i> Upper Limb Anatomy MCQs</h1>
+            <p class="subtitle">Test your knowledge of upper limb anatomy with these multiple-choice questions</p>
+        </header>
+
+        <div class="content">
+            <div class="intro-card">
+                <h2><i class="fas fa-graduation-cap"></i> About This Quiz</h2>
+                <p>This collection contains <span id="total-questions">100+</span> multiple-choice questions covering various aspects of upper limb anatomy including:</p>
+                <ul>
+                    <li>Pectoral girdle and shoulder joint</li>
+                    <li>Brachial plexus and innervation</li>
+                    <li>Arm, forearm, and hand anatomy</li>
+                    <li>Muscles, nerves, blood supply</li>
+                    <li>Joints and ligaments</li>
+                </ul>
+                <div class="stats">
+                    <div class="stat">
+                        <i class="fas fa-question-circle"></i>
+                        <span>100+ Questions</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-book-medical"></i>
+                        <span>Anatomy Focus</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-brain"></i>
+                        <span>Medical Exam Level</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="options">
+                <h2><i class="fas fa-play-circle"></i> Start Quiz</h2>
+                <div class="option-buttons">
+                    <a href="upperlimbmcqcbt.html" class="option-btn primary">
+                        <i class="fas fa-laptop-medical"></i>
+                        <div>
+                            <h3>CBT Mode</h3>
+                            <p>10 random questions with timer and scoring</p>
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    
+                    <a href="#" class="option-btn" id="browse-all-btn">
+                        <i class="fas fa-list-ol"></i>
+                        <div>
+                            <h3>Browse All Questions</h3>
+                            <p>View all questions organized by topic</p>
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    
+                    <a href="#" class="option-btn" id="topic-review-btn">
+                        <i class="fas fa-book-open"></i>
+                        <div>
+                            <h3>Topic Review</h3>
+                            <p>Study questions by specific topics</p>
+                        </div>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h2><i class="fas fa-info-circle"></i> How to Use</h2>
+                <div class="instruction-cards">
+                    <div class="instruction">
+                        <i class="fas fa-random"></i>
+                        <h3>Randomized Tests</h3>
+                        <p>Each CBT test contains 10 random questions from the entire question bank.</p>
+                    </div>
+                    <div class="instruction">
+                        <i class="fas fa-clock"></i>
+                        <h3>Timed Practice</h3>
+                        <p>Complete tests under timed conditions to simulate exam pressure.</p>
+                    </div>
+                    <div class="instruction">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Instant Feedback</h3>
+                        <p>Get immediate results with explanations for each answer.</p>
+                    </div>
+                    <div class="instruction">
+                        <i class="fas fa-redo"></i>
+                        <h3>Unlimited Retakes</h3>
+                        <p>Take as many practice tests as you need to master the material.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Upper Limb Anatomy MCQs | For Medical Education Purposes</p>
+            <p class="footer-note">Based on standard upper limb anatomy curriculum</p>
+        </footer>
+    </div>
+
+    <!-- Modal for Browse All Questions -->
+    <div id="browse-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-list"></i> All Questions</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="filter-options">
+                    <input type="text" id="question-search" placeholder="Search questions...">
+                    <select id="topic-filter">
+                        <option value="all">All Topics</option>
+                        <option value="pectoral">Pectoral Girdle</option>
+                        <option value="brachial">Brachial Plexus</option>
+                        <option value="shoulder">Shoulder Joint</option>
+                        <option value="arm">Arm Anatomy</option>
+                        <option value="forearm">Forearm Anatomy</option>
+                        <option value="hand">Hand Anatomy</option>
+                        <option value="innervation">Innervation</option>
+                        <option value="blood">Blood Supply</option>
+                    </select>
+                </div>
+                <div id="all-questions-list">
+                    <!-- Questions will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Topic Review -->
+    <div id="topic-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-book-open"></i> Topic Review</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="topic-grid">
+                    <div class="topic-card" data-topic="pectoral">
+                        <i class="fas fa-chess-board"></i>
+                        <h3>Pectoral Girdle</h3>
+                        <p>Questions about clavicle, scapula, and associated muscles</p>
+                        <button class="start-topic">Start Review</button>
+                    </div>
+                    <div class="topic-card" data-topic="brachial">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Brachial Plexus</h3>
+                        <p>Questions about nerve roots, trunks, cords, and branches</p>
+                        <button class="start-topic">Start Review</button>
+                    </div>
+                    <div class="topic-card" data-topic="shoulder">
+                        <i class="fas fa-user-md"></i>
+                        <h3>Shoulder Joint</h3>
+                        <p>Questions about glenohumeral joint, rotator cuff, and movements</p>
+                        <button class="start-topic">Start Review</button>
+                    </div>
+                    <div class="topic-card" data-topic="arm">
+                        <i class="fas fa-arm"></i>
+                        <h3>Arm Anatomy</h3>
+                        <p>Questions about muscles, nerves and vessels of the arm</p>
+                        <button class="start-topic">Start Review</button>
+                    </div>
+                    <div class="topic-card" data-topic="forearm">
+                        <i class="fas fa-hand-paper"></i>
+                        <h3>Forearm Anatomy</h3>
+                        <p>Questions about anterior and posterior compartments</p>
+                        <button class="start-topic">Start Review</button>
+                    </div>
+                    <div class="topic-card" data-topic="hand">
+                        <i class="fas fa-hand"></i>
+                        <h3>Hand Anatomy</h3>
+                        <p>Questions about carpal tunnel, muscles, and joints of the hand</p>
+                        <button class="start-topic">Start Review</button>
+                    </div>
+                    <div class="topic-card" data-topic="innervation">
+                        <i class="fas fa-brain"></i>
+                        <h3>Innervation</h3>
+                        <p>Questions about nerve supply to muscles and skin</p>
+                        <button class="start-topic">Start Review</button>
+                    </div>
+                    <div class="topic-card" data-topic="blood">
+                        <i class="fas fa-tint"></i>
+                        <h3>Blood Supply</h3>
+                        <p>Questions about arteries and veins of the upper limb</p>
+                        <button class="start-topic">Start Review</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="upperlimbmcqquestions.js"></script>
+    <script src="upperlimbmcq.js"></script>
+</body>
+</html>
